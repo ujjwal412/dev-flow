@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevFlow - Productivity Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>DevFlow</h1>
+    <p>Plan your work. Track your progress.</p>
+
+    <form id="task-form">
+      <input
+        id="task-input"
+        type="text"
+        placeholder="What do you need to do?"
+        required
+      >
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div class="stats">
+      <p>Total: <span id="total">0</span></p>
+      <p>Completed: <span id="completed">0</span></p>
+      <p>Pending: <span id="pending">0</span></p>
+    </div>
+
+    <ul id="task-list"></ul>
+  </main>
+</body>
+</html>
